@@ -19,7 +19,7 @@ in a raw dataset and prepare the data for further analysis.
 **Dataset:** Titanic Dataset\
 **Original size:** 891 rows × 12 columns
 
-* Main Columns
+ Main Columns
 
 -   PassengerId
 -   Survived
@@ -51,25 +51,25 @@ Missing values were checked using `isnull().sum()`.
 
 The following missing values were identified:
 
-  ------------------------------------------------------------------------
-  Column                              Missing Values Treatment
-  --------------------- ---------------------------- ---------------------
-  Age                                            177 Filled using median
+  
+  Column   -       Missing Values Treatment
+  
+  Age      -      177 Filled using median
 
-  Cabin                                          687 Created
-                                                     `Cabin_Available`
-                                                     indicator and removed
-                                                     original column
+  Cabin    -      687 Created
+                  Cabin_Available`
+                  indicator and removed
+                  original column
 
-  Embarked                                         2 Filled using mode
-  ------------------------------------------------------------------------
+  Embarked   -    2 Filled using mode
+  
 
 2. Duplicate Records
 
 Duplicate rows were checked using `duplicated()`.
 
--   Duplicate rows found: **0**
--   Duplicate Passenger IDs found: **0**
+-   Duplicate rows found: 0
+-   Duplicate Passenger IDs found: 0
 
 Therefore, no duplicate records required removal.
 
